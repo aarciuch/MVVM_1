@@ -7,10 +7,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
-class WordViewModel(private val w: Word) : ViewModel() {
+class WordViewModel(w: Word) : ViewModel() {
     var a: Word = w
     public var word1: MutableLiveData<String> = MutableLiveData<String>()
-    set(value) {
+    set(word1) {
         word1.value = field.toString()
     }
     val _word1 : LiveData<String>
